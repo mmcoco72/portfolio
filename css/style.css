@@ -315,13 +315,13 @@ svg {
 .l-header__deco1 {
   width: 15px;
   left: 16px;
-  top: -160px;
+  top: -152px;
 }
 .l-header__deco2 {
   width: 11px;
   left: 32px;
   margin-left: 64px;
-  top: -152px;
+  top: -168px;
 }
 .l-header__deco3 {
   width: 12px;
@@ -433,6 +433,15 @@ svg {
 footer {
   z-index: var(--z-index-default);
   position: relative;
+  color: var(--color-font-base);
+  position: relative;
+}
+
+.footer-logo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .c-button {
@@ -738,6 +747,7 @@ footer {
   .p-work-wrapper {
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
   .p-work-contents {
     width: 560px;

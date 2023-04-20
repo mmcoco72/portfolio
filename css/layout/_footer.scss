@@ -1,4 +1,13 @@
 footer {
     z-index: var(--z-index-default);
     position: relative;//zindex指定のため
+    color: var(--color-font-base);
+    position: relative;
+}
+
+.footer-logo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
