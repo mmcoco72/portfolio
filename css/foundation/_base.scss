@@ -1,0 +1,17 @@
+body {
+    line-height: 1.8;
+    font-size: 16px;
+    font-family: var(--font-family-base);
+    background: var(--color-background-top);
+    height: 100%;
+
+    @media screen and (min-width: 600px) {
+        font-size: 20px;
+    }
+
+    //ハンバーガーメニューのクリックでスクロール禁止
+    &.active {
+        height: 100%;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,58 @@
+/* TODO消せ*/
+.p-contact-form {
+    padding-bottom: 88px;
+}
+
+
+.p-contact {
+    &__input {
+        background-color: rgba(var(--color-input-backfground), 0.1);
+        width: 100%;
+        border-radius: 20px;
+        padding: 0 8px;
+        margin-top: 8px;
+    }
+
+    &-form__item:not(:last-of-type) {
+        margin-bottom: 24px;
+    }
+
+    &__textarea {
+        line-height: 1.2;
+        height: 8.4em;
+        padding: 8px;
+    }
+
+    &__text {
+        height: 40px;
+    }
+
+    &_square {
+        width: 16px;
+        height: 16px;
+        color: var(--color-font-base);
+        border: 1px solid;
+        margin: 0 auto;
+        margin-right: 16px;
+    }
+
+    &-form__list {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .p-contact-wrapper-lg {
+        width: max(880px);
+        margin: 0 auto;
+    }
+}
+
+::placeholder {
+    padding: 0 4px;
+    align-items: center;
+    color: var(--color-font-base);
+    opacity: var(--transpency);
+    height: 4.5em;
+}
+

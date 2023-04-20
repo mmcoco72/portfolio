@@ -1,0 +1,100 @@
+.c-section {
+    color: var(--color-font-base);
+
+    &:not(:first-child) {
+        margin-top: 120px;
+
+        @media screen and (min-width: 600px) {
+            margin-top: 160px;
+        }
+    }
+
+    &__title {
+        color: var(--color-font-base);
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 30px;
+        position: relative;
+
+        @media screen and (min-width: 600px) {
+            margin-bottom: 80px;
+        }
+        
+        &-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        &::after {
+            content: "";
+            width: 160px;
+            height: 0.5px;
+            opacity: var(--transpency);
+            display: inline-block;
+            position: absolute;
+            bottom: -8px;
+            left: calc(50% - 80px); /* 左右中央 */
+            background-color: var(--color-font-base);
+        }
+
+    }
+}
+
+
+
+//セクションのアニメーション
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    animation-name: fadeUp;
+    animation-duration: 1s;
+    //アニメーション終了後のスタイル = 100%時と同様
+    animation-fill-mode: both;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+//星のアニメーション
+.c-star {
+    position: fixed;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: auto;
+    animation: star-rotate 3s linear infinite, star-move 40s linear infinite;
+}
+
+@keyframes star-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+  
+@keyframes star-move {
+    0% { //translateX = スタート位置
+        transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
+    }
+    50% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
+        opacity: 0;
+    }
+}

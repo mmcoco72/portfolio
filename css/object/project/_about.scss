@@ -1,0 +1,68 @@
+.p-about__img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: var(--z-index-front);
+
+    @media screen and (min-width: 600px) {
+        width: 360px;
+        height: 360px;
+        margin-right: 80px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    
+}
+
+.p-profile {
+    &__title {
+        margin-right: 16px;
+        white-space: nowrap;
+        width: 48px;
+
+        @media screen and (min-width: 600px) {
+            margin-right: 40px;
+        }
+    }
+    
+    &__item {
+        //100% - titleの幅に指定
+        width: calc(100% - 64px);
+    }
+
+    &__box {
+        display: flex;
+        width: 100%;
+    }
+
+    &__wrapper {
+        color: var(--color-font-base);
+        margin-top: 32px;
+
+        @media screen and (min-width: 600px) {
+            margin-top: 0;
+        }
+    }
+
+    &__content1 {
+        margin: 32px 0;
+    }
+
+    @media screen and (min-width: 600px) {
+        &__flex {
+            display: flex;
+            margin-bottom: 88px;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .p-profile__box:not(:last-child) {
+        margin-bottom: 48px; /* 余白の大きさを設定 */
+      }
+      
+}

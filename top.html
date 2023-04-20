@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>emma's portfolio</title>
+    <meta
+      name="description"
+      content="自己紹介と、これまでに作ったものを載せています。"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:site_name" content="サイト名" />
+    <meta property="og:type" content="website" />
+    <meta property="og:emma's portfolio" content="ページのタイトル" />
+    <meta property="og:ポートフォリオサイト" content="ページの説明" />
+    <meta property="og:locale" content="ja_JP" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- js -->
+    <script src="js/works.js"></script>
+    <script src="js/top-kv.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/menu.js" type="module"></script>
+    <script src="js/section.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="c-star-wrapper">
+      <img src="img/star.png" alt="" class="c-star">
+    </div>
+    <div class="l-top__kv"></div>
+    <div class="l-top__container">
+      <header class="l-header">
+        <div class="l-header__inner-wrapper">
+          <div class="l-header__inner">
+            <h1 class="l-header__logo">
+              emma's portfolio
+            </h1>
+            <div class="l-header__menu">
+              <div class="l-hamburger-wrapper">
+                <div class="l-hamburger" id="l-hamburger">
+                  <span class="l-hamburger__bar"></span>
+                  <span class="l-hamburger__bar"></span>
+                  <span class="l-hamburger__bar"></span>
+                </div>
+                <div class="l-menu__circle"></div>
+              </div>
+              <div class="l-header__nav">
+                <button class="l-nav__item" data-index="0">About me</button>
+                <button class="l-nav__item" data-index="1">Works</button>
+                <button class="l-nav__item" data-index="2">Contact</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="l-menu-wrapper">
+          <div class="l-menu__item">
+            <button class="l-menu__item-name" id="scrollToSection" data-index="0" disabled>
+              Abou me
+            </button>
+          </div>
+          <div class="l-menu__item">
+            <button class="l-menu__item-name" id="scrollToSection" data-index="1" disabled>
+              Works
+            </button>
+          </div>
+          <div class="l-menu__item">
+            <button class="l-menu__item-name" id="scrollToSection" data-index="2" disabled>
+              Contact
+            </button>
+          </div>
+        </div>
+        <div class="l-header__decorations">
+          <span class="l-header__deco1 l-header__deco">
+            <picture>
+              <source media="(min-width: 600px)" srcset="img/top-kv/deco1-lg.png">
+              <img src="img/top-kv/deco1.png" alt="">
+            </picture> 
+          </span>
+          <span class="l-header__deco2 l-header__deco">
+            <picture>
+              <source media="(min-width: 600px)" srcset="img/top-kv/deco2-lg.png">
+              <img src="img/top-kv/deco2.png" alt="">
+            </picture> 
+          </span>
+          <span class="l-header__deco3 l-header__deco">
+            <picture>
+              <source media="(min-width: 600px)" srcset="img/top-kv/deco3-lg.png">
+              <img src="img/top-kv/deco3.png" alt="">
+            </picture>  
+          </span>
+          <span class="l-header__deco4 l-header__deco">
+            <picture>
+              <source media="(min-width: 600px)" srcset="img/top-kv/deco4-lg.png">
+              <img src="img/top-kv/deco4.png" alt="">
+            </picture>            
+          </span>
+        </div>
+      </header>
+
+      <main class="p-main">
+        <section class="c-section fade-up" id="about">
+          <h2 class="c-section__title">
+            About me
+          </h2>
+            <div class="p-profile">
+              <div class="p-profile__flex">
+                <div class="p-about__img">
+                  <img src="img/about.png" alt="プロフィール画像">
+                </div>
+                <div class="p-profile__wrapper">
+                  <div class="p-profile__box">
+                    <p class="p-profile__title">名前</p>
+                    <p class="p-profile__item">鈴木愛麗</p>
+                  </div>
+                  <div class="p-profile__box">
+                    <p class="p-profile__title">生まれ</p>
+                    <p class="p-profile__item">2001年</p>
+                  </div>
+                  <div class="p-profile__box">
+                    <p class="p-profile__title">出身</p>
+                    <p class="p-profile__item">京都</p>
+                  </div>
+                  <div class="p-profile__box">
+                    <p class="p-profile__title">趣味</p>
+                    <p class="p-profile__item">アニメ・ゲーム実況・お笑いをみる事。音楽（バンド・ボカロ・KPOP・ゲームのBGM）を聴くこと。</p>
+                  </div>
+                </div>
+              </div>
+            <div class="p-profile__contents-wrapper">
+              <p class="p-profile__content1">
+                小学生の頃から、図工の授業、中でも絵を描くことが好きで、思いを形にしていくことに楽しさを感じていました。
+                高校生〜大学生の時には、アニメのキャラクターや人物画を趣味で描いていました。
+              </p>
+              <div class="p-profile__content2">
+                大学生3回生になってからは、あったらいいなを形にしたいという想いからプログラミング(PHP)を学び始めました。
+                使い心地を良くするための設計や機能、デザイン、それに関係する心理学といったところにも興味があります。
+                描いたイラストと作ったアプリを載せているので、よければ覗いてみてください。
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="c-section" id="work">
+          <div class="c-section__title-wrapper">
+            <h2 class="c-section__title">
+              Works
+            </h2>
+            <div class="p-work__button-top-wrapper">
+              <div class="p-work__button-top"></div>
+            </div>
+          </div>
+          <div class="c-work__button-wrapper">
+            <img src="./img/works/button.png" class="c-work__button" onclick="next()">
+          </div>
+          <div class="p-work-wrapper">
+            <div class="p-work__img">
+              <img src="./img/works/filter.jpg" id="p-work__img" alt="開発物の画像">
+              <video class="video" 
+                      src="./img/works/diary.mov" 
+                      poster="./img/works/filter.jpg" 
+                      id="p-work__mov" 
+                      loop autoplay muted 
+                      alt="開発物の画像">
+              </video>
+            </div>
+            <div class="p-work-contents">
+              <div class="p-work-content-wrapper">
+                <p class="p-work-content__title">-作品名-</p>
+                <p class="p-work-content__item p-work__head-title">ミラーダイアリー</p>
+                <p class="p-work-content__item p-work__head-title">emma's portfolio</p>
+                <p class="p-work-content__item p-work__head-title">イラスト</p>
+              </div>
+              <div class="p-work-content-wrapper">
+                <p class="p-work-content__title">-概要-</p>
+                <p class="p-work-content__item p-work__detail">感情と上手く付き合い、毎日をいい気分で過ごせるようにと思い作った日記アプリです。</p>
+                <p class="p-work-content__item p-work__detail">自己紹介に合わせて、これまで作ったものを載せています。</p>
+                <p class="p-work-content__item p-work__detail">友達の写真から描いた絵です。</p>
+              </div>
+              <div class="p-work-content-wrapper">
+                <p class="p-work-content__title">-工夫点-</p>
+                <p class="p-work-content__item p-work__point">1番の特徴は、感情を1~5の数値で記録する機能です。数値化で自分を客観視する時間を作り、ネガティブな感情をうまく消化することを目的としています。</p>
+                <p class="p-work-content__item p-work__point">物静かさと、1日の中の自由時間でワクワクする夜に目をつけました。友達から落ち着きすぎと言われたり、音楽・アニメ・お笑いというエンタメコンテンツが好きな私に合った雰囲気なのではと思い夜を選びました。</p>
+                <p class="p-work-content__item p-work__point">左側の高さのある植物で、枝の上部は光が当たって明るくなっているようにしました。</p>
+              </div>
+              <div class="p-work-content-wrapper">
+                <p class="p-work-content__title">-作成期間-</p>
+                <p class="p-work-content__item p-work__term">約3ヶ月</p>
+                <p class="p-work-content__item p-work__term">
+                  約3ヶ月
+                </p>
+                <p class="p-work-content__item p-work__term">約2ヶ月</p>
+              </div>
+              <div class="p-work-content-wrapper">
+                <p class="p-work-content__title">-使用技術-</p>
+                <p class="p-work-content__item p-work__tech">PHP(Laravel),HTML,CSS,JavaScript,AWS</p>
+                <p class="p-work-content__item p-work__tech">HTML,CSS,Sass,JavaScript,AdobeXD</p>
+                <p class="p-work-content__item p-work__tech">アイビスペイント</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="c-section delay" id="contact">
+          <div class="p-contact-wrapper-lg">
+            <h2 class="c-section__title">
+              Contact
+            </h2>
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe0bkTCxSm2KOGWBCbZkNXeE-I20v5yjk2nCWNKmfIPUofaKg/formResponse" 
+                  class="p-contact-form" 
+                  method="POST"
+                  target="hidden_iframe" 
+                  onsubmit="submitted=true;">
+              <div class="p-contact-form__list">
+                <div class="p-contact-form__item">
+                  <div class="p-contact-form__title">
+                    名前
+                    <span class="p-contact-form__required">
+                      必須
+                    </span>
+                  </div>
+                  <div class="p-contact-form__input-wrapper">
+                    <input class="p-contact__input p-contact__text" type="text" name="entry.266724351" required="required" placeholder="山田 太郎" />
+                  </div>
+                </div>
+                <div class="p-contact-form__item">
+                  <div class="p-contact-form__title">
+                    メールアドレス
+                  </div>
+                  <div class="p-contact-form__input-wrapper">
+                    <input class="p-contact__input p-contact__text" type="text" name="entry.317471798" placeholder="info@sample.com" />
+                  </div>
+                </div>
+                <div class="p-contact-form__item">
+                  <div class="p-contact-form__title">
+                    お問い合わせ内容
+                    <span class="p-contact-form__required">必須</span>
+                  </div>
+                  <div class="p-contact-form__input-wrapper">
+                    <textarea class="p-contact__input p-contact__textarea" name="entry.1986964398" placeholder="ご自由にご記入ください。"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="c-btn-wrapper">
+                <button type="submit" class="c-button">
+                  送信する
+                </button>
+              </div>
+              <script type=“text/javascript”>
+                let submitted = false;
+              </script>
+              <iframe
+                name="hidden_iframe"
+                style="display: none">
+              </iframe>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <img src="img/footer.png" alt="">
+    </footer>
+  </body>
+</html>
