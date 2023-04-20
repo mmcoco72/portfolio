@@ -245,7 +245,7 @@ svg {
   top: -5%;
   padding: 0;
   display: block;
-  background: url("../../img/top-kv.png");
+  background: url("../img/top-kv/top-kv.png");
   background-repeat: no-repeat;
   background-size: 110% auto;
   z-index: var(--z-index-default);
@@ -254,7 +254,7 @@ svg {
 }
 @media screen and (min-width: 600px) {
   .l-top__kv {
-    background: url("../../img/top-kv/top-kv-lg.png");
+    background: url("../img/top-kv/top-kv-lg.png");
     height: 440px;
     width: 100%;
     background-repeat: no-repeat;
@@ -379,7 +379,7 @@ svg {
 }
 .l-menu__circle {
   position: fixed;
-  z-index: 3;
+  z-index: var(--z-index-default);
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -437,7 +437,7 @@ footer {
 
 .c-button {
   background-color: var(--color-font-base);
-  background-color: rgba(255, 255, 255, var(--transpency-background)); /* TODO変数使えない */
+  background-color: rgba(255, 255, 255, var(--transpency-background));
   display: block;
   margin: 0 auto;
   height: 64px;
@@ -450,7 +450,6 @@ footer {
   position: relative;
 }
 
-/* TODO 暫定css */
 .c-work__button {
   width: 56px;
   -o-object-fit: cover;
@@ -657,11 +656,6 @@ footer {
     margin-bottom: 48px; /* 余白の大きさを設定 */
   }
 }
-/* TODO消せ*/
-.p-contact-form {
-  padding-bottom: 88px;
-}
-
 .p-contact__input {
   background-color: rgba(var(--color-input-backfground), 0.1);
   width: 100%;
@@ -694,7 +688,8 @@ footer {
 
 @media screen and (min-width: 600px) {
   .p-contact-wrapper-lg {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     margin: 0 auto;
   }
 }
@@ -720,6 +715,9 @@ footer {
   height: 4.5em;
 }
 
+.p-work {
+  position: relative;
+}
 .p-work-content__title {
   margin-top: 24px;
   font-size: 14px;
@@ -728,26 +726,12 @@ footer {
 .p-work__button-top {
   border-bottom: 1px solid var(--color-font-base);
   background-color: var(--color-background-top);
-  width: 64px;
+  width: 56px;
   height: 32px;
-  right: 0;
-  display: inline-block;
-  position: relative;
+  display: block;
   z-index: var(--z-index-default);
   position: absolute;
-  right: 0;
-  width: 56px;
-}
-@media screen and (min-width: 600px) {
-  .p-work__button-top {
-    position: absolute;
-    right: 0;
-    top: 35px;
-    width: 56px;
-  }
-  .p-work__button-top-wrapper {
-    display: flex;
-  }
+  top: -200%;
 }
 
 @media screen and (min-width: 600px) {
@@ -757,6 +741,7 @@ footer {
   }
   .p-work-contents {
     width: 560px;
+    margin-left: 40px;
   }
   .p-work-img {
     display: flex;

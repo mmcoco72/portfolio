@@ -1,7 +1,4 @@
-/* TODO消せ*/
-.p-contact-form {
-    padding-bottom: 88px;
-}
+
 
 
 .p-contact {
@@ -43,7 +40,8 @@
 
 @media screen and (min-width: 600px) {
     .p-contact-wrapper-lg {
-        width: max(880px);
+        width: 100%;
+        max-width: 880px;
         margin: 0 auto;
     }
 }

@@ -1,6 +1,6 @@
 .c-button {
     background-color: var(--color-font-base);
-    background-color: rgba(255, 255, 255, var(--transpency-background)); /* TODO変数使えない */
+    background-color: rgba(255, 255, 255, var(--transpency-background));
     display: block;
     margin: 0 auto;
     height: 64px;
@@ -14,7 +14,6 @@
     }
 }
 
-/* TODO 暫定css */
 .c-work__button {
     width: 56px;
     object-fit: cover;

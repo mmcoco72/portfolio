@@ -52,7 +52,7 @@
   padding: 0;
   display: block;
   
-  background: url("../../img/top-kv.png");//TODO
+  background: url("../img/top-kv/top-kv.png");
   background-repeat: no-repeat;
   background-size: 110% auto;
   z-index: var(--z-index-default);
@@ -60,7 +60,7 @@
 
 
 @media screen and (min-width: 600px) {
-  background: url("../../img/top-kv/top-kv-lg.png");
+  background: url("../img/top-kv/top-kv-lg.png");
   height: 440px;
   width: 100%;
   background-repeat: no-repeat;
@@ -191,7 +191,7 @@
 .l-menu{
   &__circle {
     position: fixed;
-    z-index: 3;//TODO
+    z-index: var(--z-index-default);
     width: 100px;
     height: 100px;
     border-radius: 50%;
