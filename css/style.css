@@ -550,12 +550,13 @@ footer {
   }
 }
 .c-star {
-  position: fixed;
+  position: absolute;
   top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 64px;
   height: auto;
+  will-change: transform;
   -webkit-animation: star-rotate 3s linear infinite, star-move 40s linear infinite;
           animation: star-rotate 3s linear infinite, star-move 40s linear infinite;
 }
@@ -763,14 +764,21 @@ footer {
   aspect-ratio: 16/9;
   height: 200px;
 }
+@media screen and (min-width: 600px) {
+  #p-work__mov {
+    width: 500px;
+    height: auto;
+  }
+}
 #p-work__img {
   display: none;
-  height: 400px;
-  width: auto;
+  width: 100%;
+  height: auto;
 }
 @media screen and (min-width: 600px) {
   #p-work__img {
     flex: 1;
+    width: 70%;
   }
 }
 

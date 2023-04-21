@@ -65,12 +65,13 @@
 
 //星のアニメーション
 .c-star {
-    position: fixed;
+    position: absolute;
     top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 64px;
     height: auto;
+    will-change: transform;
     animation: star-rotate 3s linear infinite, star-move 40s linear infinite;
 }
 
