@@ -298,6 +298,10 @@ svg {
   align-items: center;
   z-index: var(--z-index-front);
 }
+.l-header__inner-wrapper.is-blur {
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
 .l-header__logo {
   margin-right: 0;
   z-index: var(--z-index-front);
