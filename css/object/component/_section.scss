@@ -47,7 +47,7 @@
     opacity: 0;
     transform: translateY(50px);
     animation-name: fadeUp;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     //アニメーション終了後のスタイル = 100%時と同様
     animation-fill-mode: both;
 }
@@ -55,7 +55,7 @@
 @keyframes fadeUp {
     0% {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(30px);
     }
     100% {
         opacity: 1;

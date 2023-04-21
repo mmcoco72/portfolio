@@ -528,8 +528,8 @@ footer {
   transform: translateY(50px);
   -webkit-animation-name: fadeUp;
           animation-name: fadeUp;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -537,7 +537,7 @@ footer {
 @-webkit-keyframes fadeUp {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(30px);
   }
   100% {
     opacity: 1;
@@ -548,7 +548,7 @@ footer {
 @keyframes fadeUp {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(30px);
   }
   100% {
     opacity: 1;
