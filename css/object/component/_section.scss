@@ -88,12 +88,6 @@
         transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
         -webkit-transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
     }
-    50% {
-        opacity: 1;
-    }
-    55% {
-        opacity: 0;
-    }
     100% {
         transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
         -webkit-transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);

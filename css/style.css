@@ -6,7 +6,7 @@
   --color-font-base: rgb(255,255,255);
   --color-input-backfground: 255,255,255;
   --font-family-base: "Noto Serif JP", serif;
-  --width-content: 1120px;
+  --width-content: 1080px;
   --z-index-star: 0;
   --z-index-deco: 100;
   --z-index-default: 200;
@@ -22,11 +22,6 @@ body {
   background: var(--color-background-top);
   height: 100%;
   width: 100%;
-}
-@media screen and (min-width: 600px) {
-  body {
-    font-size: 20px;
-  }
 }
 body.active {
   height: 100%;
@@ -588,12 +583,6 @@ footer {
     transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
     -webkit-transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
   }
-  50% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 0;
-  }
   100% {
     transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
     -webkit-transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
@@ -604,12 +593,6 @@ footer {
   0% {
     transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
     -webkit-transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
-  }
-  50% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 0;
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
@@ -740,11 +723,6 @@ footer {
 .p-work-content__title {
   font-size: 14px;
   position: relative;
-}
-@media screen and (min-width: 600px) {
-  .p-work-content__title {
-    font-size: 18px;
-  }
 }
 .p-work-content__title :not(:first-child) {
   margin-top: 24px;
