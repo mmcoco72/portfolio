@@ -73,24 +73,3 @@
     height: auto;
     animation: star-rotate 3s linear infinite, star-move 40s linear infinite;
 }
-
-@keyframes star-rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-  
-@keyframes star-move {
-    0% { //translateX = スタート位置
-        transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
-        -webkit-transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
-    }
-    99.9%, to {
-        transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
-        -webkit-transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
-        opacity: 0;
-    }
-}
