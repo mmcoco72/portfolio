@@ -550,13 +550,12 @@ footer {
   }
 }
 .c-star {
-  position: absolute;
+  position: fixed;
   top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 64px;
   height: auto;
-  will-change: transform;
   -webkit-animation: star-rotate 3s linear infinite, star-move 40s linear infinite;
           animation: star-rotate 3s linear infinite, star-move 40s linear infinite;
 }
@@ -581,6 +580,7 @@ footer {
 @-webkit-keyframes star-move {
   0% {
     transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
   }
   50% {
     opacity: 1;
@@ -590,12 +590,14 @@ footer {
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
+    -webkit-transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
     opacity: 0;
   }
 }
 @keyframes star-move {
   0% {
     transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
   }
   50% {
     opacity: 1;
@@ -605,6 +607,7 @@ footer {
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
+    -webkit-transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
     opacity: 0;
   }
 }
