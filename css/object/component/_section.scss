@@ -86,11 +86,11 @@
 @keyframes star-move {
     0% { //translateX = スタート位置
         transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
-        -webkit-transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
+        -webkit-transform: -webkit-translate(-50%, -50%) -webkit-rotate(0deg) -webkit-translateX(-300px);
     }
     100% {
         transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
-        -webkit-transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
+        -webkit-transform: -webkit-translate(-50%, -50%) -webkit-rotate(360deg) -webkit-translateX(-300px);
         opacity: 0;
     }
 }
