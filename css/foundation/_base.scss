@@ -4,6 +4,7 @@ body {
     font-family: var(--font-family-base);
     background: var(--color-background-top);
     height: 100%;
+    width: 100%;
 
     @media screen and (min-width: 600px) {
         font-size: 20px;

@@ -21,6 +21,7 @@ body {
   font-family: var(--font-family-base);
   background: var(--color-background-top);
   height: 100%;
+  width: 100%;
 }
 @media screen and (min-width: 600px) {
   body {
@@ -747,6 +748,9 @@ footer {
 }
 .p-work-content__title :not(:first-child) {
   margin-top: 24px;
+}
+.p-work-content__item {
+  overflow-wrap: break-word;
 }
 .p-work-content-wrapper {
   margin-top: 24px;
