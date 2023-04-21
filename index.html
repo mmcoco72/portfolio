@@ -22,12 +22,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <script>
       document.addEventListener("DOMContentLoaded", function(event) {
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'css/star';
-        document.head.appendChild(link);
-  });
+        var style = '<link rel="stylesheet" type="text/css" media="all" href="css/star.css" />';
+        document.querySelector('head link:last-of-type').insertAdjacentHTML('afterend', style);
+      });
     </script>
     <!-- js -->
     <script src="js/works.js"></script>
