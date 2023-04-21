@@ -2,9 +2,26 @@
     position: relative;
 
     &-content__title {
-        margin-top: 24px;
         font-size: 14px;
         position: relative;
+
+        @media screen and (min-width: 600px) {
+            font-size: 18px;
+        }
+
+        :not(:first-child) {
+            margin-top: 24px;
+        }
+    }
+
+    &-content-wrapper {
+        margin-top: 24px;
+    }
+
+    @media screen and (min-width: 600px) {
+        &-content-wrapper:first-child {
+            margin-top: 0;
+        }
     }
 
     &__button-top {
@@ -16,6 +33,10 @@
         z-index: var(--z-index-default);
         position: absolute;
         top: -200%;
+    }
+
+    &__head-title-sub {
+        font-size: 12px;
     }
 }
 
@@ -34,7 +55,7 @@
 
         &-img {
             display: flex;
-        align-items: center;
+            align-items: center;
         }
     }
 }
@@ -46,7 +67,6 @@
         height: 200px;
 
         @media screen and (min-width: 600px) {
-            width: 500px;
             height: auto;
         }
     }

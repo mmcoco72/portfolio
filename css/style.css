@@ -6,7 +6,7 @@
   --color-font-base: rgb(255,255,255);
   --color-input-backfground: 255,255,255;
   --font-family-base: "Noto Serif JP", serif;
-  --width-content: 1080px;
+  --width-content: 1120px;
   --z-index-star: 0;
   --z-index-deco: 100;
   --z-index-default: 200;
@@ -736,9 +736,24 @@ footer {
   position: relative;
 }
 .p-work-content__title {
-  margin-top: 24px;
   font-size: 14px;
   position: relative;
+}
+@media screen and (min-width: 600px) {
+  .p-work-content__title {
+    font-size: 18px;
+  }
+}
+.p-work-content__title :not(:first-child) {
+  margin-top: 24px;
+}
+.p-work-content-wrapper {
+  margin-top: 24px;
+}
+@media screen and (min-width: 600px) {
+  .p-work-content-wrapper:first-child {
+    margin-top: 0;
+  }
 }
 .p-work__button-top {
   border-bottom: 1px solid var(--color-font-base);
@@ -749,6 +764,9 @@ footer {
   z-index: var(--z-index-default);
   position: absolute;
   top: -200%;
+}
+.p-work__head-title-sub {
+  font-size: 12px;
 }
 
 @media screen and (min-width: 600px) {
@@ -773,7 +791,6 @@ footer {
 }
 @media screen and (min-width: 600px) {
   #p-work__mov {
-    width: 500px;
     height: auto;
   }
 }
