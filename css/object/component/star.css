@@ -1,4 +1,4 @@
-/* @keyframes star-rotate {
+@keyframes star-rotate {
     from {
         transform: rotate(0deg);
     }
@@ -17,4 +17,4 @@
         -webkit-transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
         opacity: 0;
     }
-} */
+}
