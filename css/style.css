@@ -245,8 +245,7 @@ svg {
   background-repeat: no-repeat;
   background-size: 110% auto;
   z-index: var(--z-index-default);
-  -webkit-animation: kv-slide 1s ease;
-          animation: kv-slide 1s ease;
+  animation: kv-slide 1s ease;
 }
 @media screen and (min-width: 600px) {
   .l-top__kv {
@@ -256,14 +255,6 @@ svg {
     background-repeat: no-repeat;
     background-size: cover;
     top: -18%;
-  }
-}
-@-webkit-keyframes kv-slide {
-  0% {
-    transform: translateY(-10%);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 @keyframes kv-slide {
@@ -305,8 +296,7 @@ svg {
 .l-header__decorations {
   display: flex;
   justify-content: flex-end;
-  -webkit-animation: down 0.1s;
-          animation: down 0.1s;
+  animation: down 0.1s;
   z-index: var(--z-index-deco);
 }
 .l-header__deco {
@@ -408,18 +398,9 @@ svg {
   font-size: 30px;
 }
 .l-menu-wrapper.active {
-  -webkit-animation: menu-fadeIn 1s linear;
-          animation: menu-fadeIn 1s linear;
+  animation: menu-fadeIn 1s linear;
   opacity: 1;
   display: block;
-}
-@-webkit-keyframes menu-fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 @keyframes menu-fadeIn {
   0% {
@@ -521,23 +502,9 @@ footer {
 .fade-up {
   opacity: 0;
   transform: translateY(50px);
-  -webkit-animation-name: fadeUp;
-          animation-name: fadeUp;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+  animation-name: fadeUp;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
 }
 
 @keyframes fadeUp {
@@ -557,17 +524,7 @@ footer {
   transform: translate(-50%, -50%);
   width: 64px;
   height: auto;
-  -webkit-animation: star-rotate 3s linear infinite, star-move 40s linear infinite;
-          animation: star-rotate 3s linear infinite, star-move 40s linear infinite;
-}
-
-@-webkit-keyframes star-rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  animation: star-rotate 3s linear infinite, star-move 40s linear infinite;
 }
 
 @keyframes star-rotate {
@@ -576,17 +533,6 @@ footer {
   }
   to {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes star-move {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
-    -webkit-transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
-    -webkit-transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
-    opacity: 0;
   }
 }
 @keyframes star-move {
@@ -600,6 +546,26 @@ footer {
     opacity: 0;
   }
 }
+/* @keyframes star-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes star-move {
+    0% { 
+        transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
+        -webkit-transform: translate(-50%, -50%) rotate(0deg) translateX(-300px);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
+        -webkit-transform: translate(-50%, -50%) rotate(360deg) translateX(-300px);
+        opacity: 0;
+    }
+} */
 .p-about__img {
   width: 200px;
   height: 200px;
@@ -696,13 +662,6 @@ footer {
   }
 }
 ::-moz-placeholder {
-  padding: 0 4px;
-  align-items: center;
-  color: var(--color-font-base);
-  opacity: var(--transpency);
-  height: 4.5em;
-}
-:-ms-input-placeholder {
   padding: 0 4px;
   align-items: center;
   color: var(--color-font-base);
